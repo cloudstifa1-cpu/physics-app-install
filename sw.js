@@ -1,7 +1,7 @@
 // Offline cache. The build fills in VERSION and FILES; a new version
 // replaces the old cache so updates show up on the next launch.
-const CACHE = 'physics-e461349f8b';
-const FILES = ["./","index.html","app.8921dd1c.js","style.ab295da1.css","manifest.webmanifest","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
+const CACHE = 'physics-0aa26962a6';
+const FILES = ["./","index.html","app.d71bd691.js","style.f996b46e.css","manifest.webmanifest","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)));
